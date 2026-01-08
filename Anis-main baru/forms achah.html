@@ -1,0 +1,88 @@
+<html>
+<head>
+       <title>Form</title>
+	   <script src="script.js"></script>
+</head>
+
+<body id="first-page">
+
+<h1 id="welcome">Welcome</h1>
+<button onclick="welc()" style+"font-size:8px">Change This Color</button>
+<p>Fill your information</p>
+
+<button onclick="mula()"> START </button><br>
+<button onclick="darkmode()" style="background-color: blue ; color: Yellow"> Dark Mode </button>
+<button onclick="lightmode()" style="background-color: lightblue ; color: Yellow"> Light Mode</button> <br><br>
+
+<button onclick="LargeText()">LARGE TEXT</button>
+<button onclick="SmallText()">SMALL TEXT</button>
+
+<br>
+<form id="form" onsubmit="hantaq();return false;" style="border:1px black solid">  
+<button onclick="borang()">CHANGE FORM COLOR </button> <br>
+
+     <label for="name" style="padding:1.5px;color:blue;background-color : lightgreen">Name</label>
+     <input type="text" id="name" required="" placeholder="Nama penuh"><br>
+	 
+	 <label for="phone">phone number<label>
+	 <input type="phone" id="phone"> <br>
+	 
+	 <label for="pass">password</label>
+	 <input type="password" id="pass" required=""> <br>
+	 
+	 <label for="email">Email</label>
+	 <input type="email" id="email"> <br>
+	 
+	 <label for="category">category :</label>
+	    <label for="student">student</label>
+		<input type="radio" id="student" name="category">
+        <label for="lecturer">lecturer</label>
+		<input type="radio" id="lecturer" name="category">
+		<label for="visitor">visitor</label>
+		<input type="radio" id="visitor" name="category">
+		<br>
+		
+	 <label for="purpose">purpose</label>
+     <select id="purpose">
+         <option value="a">To complaint</option>
+         <option value="a">To give money</option>
+		 <option value="a">To ask money</option>
+    </select><br>
+	
+	<label for="date">Date</label>
+	<input type="date" id="date"><br>
+	<label for="time">time</label>
+	<input type="time" id="time"><br>
+	<label for="datetime">Date and time</label>
+	<input type="datetime-local" id="datetime"><br>
+	
+	<br>
+	<label for="agree">Do you with the terms and condition?
+	</label>
+	<input type="checkbox" id="agree"><br>
+	
+	<label for="proof">Upload the evidence</label><br>
+	<input type="file" id="proof"><br>
+	
+	<label for="complaint"> Write your suggestion</label><br>
+	<textarea id="complaint" rows="5" cols="30"></textarea><br>
+	
+	<label for="color">Favourite Color</label>
+	<input type="color" id="color"><br>
+	
+	<label for="rating">rate our service</label>
+	<input type="range" id="rating" min="0" max="100">
+	
+	 
+     <br><br>
+     <input type="submit">
+	 <input type="reset">
+
+
+<hr>
+<h1>Submitted Info </h1>
+<p id="result"></p>
+	 
+
+</body>
+</html>
